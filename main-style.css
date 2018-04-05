@@ -1,0 +1,54 @@
+body
+{
+    background: linear-gradient(hsl(0, 0%, 10%), hsl(0, 0%, 6%)) no-repeat fixed;
+    color: ghostwhite;
+    height: auto;
+    margin: 0;
+}
+
+h2, small, p, figcaption
+{
+    font-family: sans-serif;
+}
+h1 
+{ 
+    font-family: Corbel, monospace;
+}
+hr
+{
+    opacity: 0.5;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.screen-wrap
+{ height: 100vh; }
+
+
+a > div
+{
+    cursor: pointer;
+    outline: solid white 1px;
+}
+a > div:active
+{
+    opacity: 0.8;
+}
+
+footer
+{
+    height: auto;
+    background-color: hsl(0, 0%, 10%);
+    box-shadow: hsl(0, 0%, 30%) 0px 0px 3px;
+    font-size: 1rem;
+
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+footer > small 
+{ 
+    color: lightgrey; 
+}
