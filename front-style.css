@@ -1,3 +1,8 @@
+a:nth-child(1) > div
+{
+    border-bottom: solid pink;
+}
+
 .icon
 {
     margin: auto;
@@ -15,24 +20,6 @@ h2.title
     font-size: 2em;
     opacity: 0.6;
 }
-
-nav {text-align: center; margin-bottom: 6em; }
-nav > a > div
-{
-    font-weight: 550;
-    font-size: 1.2em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: inline-block;
-    
-    
-    color: white;
-    padding: 0.5em;
-    margin: 0.25em;
-    margin-bottom: 0.5em;
-    width: 15%;
-    
-}
-
 figure, figure > img, figcaption
 {
     margin-left: auto;

@@ -12,12 +12,12 @@
     <link rel="stylesheet" type="text/css" href="main-style.css">
     <link rel="stylesheet" type="text/css" href="front-style.css">
 </head>
-<body hidden>
+<body>
     <nav>
-        <a href="about/index.html"><div>About</div></a>
-        <a><div>Games</div></a>
-        <a><div>Media</div></a>
-        <a><div>Contact</div></a>
+        <a href="./index.html"><div>Home</div></a>
+        <a href="./about/index.html"><div>About</div></a>
+        <a href="./games/index.html"><div>Games</div></a>
+        <a href="./contact/index.html"><div>Contact</div></a>
     </nav>
     
     <canvas class="icon" width="1" height="1"></canvas>
@@ -40,10 +40,8 @@
     
     <!-- #region script tags-->
     <!--libs-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
-    <script src="lib/three.min.js"></script>
+    <script src ="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.91.0/build/three.min.js"></script>
     <!--actual js-->
     <script src="time.js"></script>
     <script src="ticker.js"></script>

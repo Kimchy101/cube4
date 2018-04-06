@@ -8,8 +8,6 @@ var cubeMesh, cubeWireMesh;
 
 var animateLvl = 0;
 
-$(document).ready(()=> $("body").show());
-
 function animate()
 {    
     updateThreeJs();
@@ -48,7 +46,7 @@ function startScene()
     cubeMesh.position.setZ(-500); cubeWireMesh.position.setZ(-700);
 
     scene.add(new THREE.AmbientLight(0xffffff, 0), new THREE.PointLight(0xffffff, 3), cubeMesh, cubeWireMesh);
-}
+}   
 
 function updateThreeJs()
 {

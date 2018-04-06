@@ -4,6 +4,7 @@ body
     color: ghostwhite;
     height: auto;
     margin: 0;
+    margin-top: 2em;
 }
 
 h2, small, p, figcaption
@@ -28,6 +29,31 @@ hr
 { height: 100vh; }
 
 
+nav
+{
+    z-index: 100;
+    width: 100vw;
+    height: 2em;
+    position: fixed;
+    top: 0;
+    text-align: center; margin-bottom: 6em;
+}
+nav > a > div
+{
+    font-weight: 550;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    
+    color: white;
+    padding: 0.5em;
+    margin: 0.25em;
+    margin-bottom: 0.5em;
+    width: 15%;
+
+    background: rgba(25, 25, 25, 0.4);
+}
+
 a > div
 {
     cursor: pointer;
@@ -46,6 +72,10 @@ footer
     font-size: 1rem;
 
     padding: 0.5rem 0 0.5rem 0;
+
+    position: absolute;
+    width: 100%;
+    /* bottom: 0; */
 }
 
 footer > small 
