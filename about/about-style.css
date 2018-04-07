@@ -48,16 +48,19 @@ a:nth-child(2) > div
     {
         font-size: 1.4em;
     }
-    .wrapper
-    {
-        width: 70%;
-    }
 }
-@media screen and (max-width: 400px)
+@media screen and (max-width: 400px) 
 {
     .container
     {
         font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .wrapper
+    {
+        width: 70%;
     }
 }
 
