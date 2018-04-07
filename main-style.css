@@ -54,6 +54,11 @@ nav > a > div
     background: rgba(25, 25, 25, 0.4);
 }
 
+@media screen and (max-width: 510px), screen and (max-height: 510px)
+{
+    
+}
+
 a > div
 {
     cursor: pointer;
@@ -66,19 +71,10 @@ a > div:active
 
 footer
 {
-    height: auto;
     background-color: hsl(0, 0%, 10%);
-    box-shadow: hsl(0, 0%, 30%) 0px 0px 3px;
+    border-top: 2px solid #222222;
     font-size: 1rem;
-
     padding: 0.5rem 0 0.5rem 0;
-
-    position: absolute;
     width: 100%;
-    /* bottom: 0; */
-}
-
-footer > small 
-{ 
-    color: lightgrey; 
+    color: lightgrey;
 }

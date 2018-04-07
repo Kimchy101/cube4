@@ -29,9 +29,10 @@ figure, figure > img, figcaption
 figure
 {
     background: hsla(136, 55%, 28%, 0.14);
-    padding: 1em;
+    padding: 20px;
 
     max-width: 70vw;
+    max-height: 70vh;
 
     font-size: 1.5em;
 }
@@ -46,6 +47,7 @@ figure > img
 }
 figure > h1
 {
+    font-size: 1.6em;
     margin-top: 0;
 }
 
@@ -60,14 +62,28 @@ figcaption > p
     padding-bottom: 12px;
 }
 
+.container
+{
+    width: 100%;
+}
 
 @media screen and (max-width: 510px), screen and (max-height: 510px)
 {
     h1 { font-size: 13vmin; }
     h2 { font-size: 5vmin; }
-    h1.title { padding-left: 2vmin; }
-    nav > div { width: 30%; height: auto; }
-    figure > p { font-size: 2em; }
-    figure > img { max-height: none;}
-    figcaption > p { font-size: 1em; }
+    h1.title { padding-left: 2vmin; font-size: 4.5em; }
+    /* figure {font-size: 1.2em;} */
+    figure {font-size: 1em; padding: 10px;}
+    figure {width: 250px;}
+}
+
+@media screen and (max-height: 400px)
+{
+    figure > img { height: 120px;}
+    figure {margin-left: 10px; margin-right: 10px;}
+    .container
+    {
+        display: flex;
+        justify-content: center;
+    }
 }
