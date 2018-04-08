@@ -1,6 +1,6 @@
-a:nth-child(2) > div
+a:nth-child(3) > div
 {
-    border-bottom: solid pink;
+    border-bottom: solid white;
 }
 
 #particles-js
@@ -39,7 +39,7 @@ a:nth-child(2) > div
 .wrapper
 {
   margin: auto;
-  width: 25em;
+  width: 23em;
 }
 
 @media screen and (max-width: 700px) and (min-width: 400px)

@@ -1,6 +1,6 @@
-a:nth-child(1) > div
+a:nth-child(2) > div
 {
-    border-bottom: solid pink;
+    border-bottom: solid white;
 }
 
 .icon
@@ -24,7 +24,7 @@ h2.title
     opacity: 0.6;
 }
 
-figure, figure > img, figcaption
+figure > img, figcaption
 {
     margin-left: auto;
     margin-right: auto;
@@ -33,22 +33,24 @@ figure, figure > img, figcaption
 figure
 {
     background: hsla(136, 55%, 28%, 0.14);
-    padding: 20px;
+    padding: 5mm;
 
-    max-width: 70vw;
-    max-height: 70vh;
-
+    margin: 0;
     font-size: 1.5em;
+    margin-bottom: 4mm;
 }
 figure > img
 {
     width: 100%;
-    max-height: 30vw;
+    height: 40%;
 
     object-fit: contain;
 
     filter: contrast(0.85);
 }
+
+
+
 figure > h1
 {
     font-size: 1.6em;
@@ -68,25 +70,23 @@ figcaption > p
 
 .container
 {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 4mm;
+    width: 84%;
+    margin-left: 8%;
 }
 
-@media screen and (max-width: 510px), screen and (max-height: 510px)
+@media screen and (max-width: 600px), screen and (max-height: 600px)
 {
-    h1.title { padding-left: 2vmin; font-size: 3.2em; letter-spacing: 6px;}
+    h1.title { padding-left: 0.4em; font-size: 3.2em; letter-spacing: 10px;}
     h2.title {font-size: 1.6em;}
     /* figure {font-size: 1.2em;} */
-    figure {font-size: 1em; padding: 10px;}
-    figure {width: 250px;}
+    figure {font-size: 1em; padding: 5mm;}
+    .container { display: block;}
 }
 
 @media screen and (max-height: 400px)
 {
     figure > img { height: 120px;}
-    figure {margin-left: 10px; margin-right: 10px;}
-    .container
-    {
-        display: flex;
-        justify-content: center;
-    }
 }

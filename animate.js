@@ -67,14 +67,13 @@ function updateThreeJs()
 
 function updateLogoStyle()
 {
-    let a = window.innerWidth < 600;
-    let b = window.innerHeight < 600;
+    let xIsSmall = window.innerWidth < 600;
+    let yIsSmall = window.innerHeight < 600;
     let pxRes;
 
-    if (!a && !b) { pxRes = 500; }
-    else if (a && !b) { pxRes = window.innerWidth - 100; }
-    else if (!a && b) { pxRes = (window.innerHeight * 0.85) - 100; }
-    else if (a && b) { pxRes = (Math.min(window.innerHeight, window.innerWidth) * 0.85) - 100; }
+    if (!xIsSmall && !yIsSmall) { pxRes = 500; }
+    else if (xIsSmall && !yIsSmall) { pxRes = 300; }
+    else { pxRes = 260; }
 
     pxRes += "px"; 
 
