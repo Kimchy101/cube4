@@ -11,36 +11,41 @@
     
     <link rel="stylesheet" type="text/css" href="main-style.css">
     <link rel="stylesheet" type="text/css" href="front-style.css">
+    <style>
+        /* Navigation bar*/
+        a:nth-child(2) > div { border-bottom: solid white; }
+    </style>
 </head>
 <body>
     <nav>
-        <div id="open-nav-js">≡</div>
-        <a href="./index.html"><div>Home</div></a>
-        <a href="./about/index.html"><div>About</div></a>
-        <a href="./games/index.html"><div>Games</div></a>
-        <a href="./contact/index.html"><div>Contact</div></a>
+        <div id="open-nav-js" class="open-nav">≡</div>
+        <a href="index.html"><div>Home</div></a>
+        <a href="about.html"><div>About</div></a>
+        <a href="media/index.html"><div>Media</div></a>
+        <a href="contact.html"><div>Contact</div></a>
     </nav>
     
     <canvas class="icon" width="1" height="1"></canvas>
-    <h1 class="title">CUBE<sub>4</sub></h1>
+    <h1 class="title cube4">CUBE<sub>4</sub></h1>
     <h2 class="title">entertainment</h2>    
-
     
-    <div class="container">
+    <div class="container x-large-font dynamic">
         <figure>
-            <h1>Latest Blog post</h1>
+            <h2>Latest Blog post</h2>
             <hr>
-            <figcaption><p>See to find out!</p></figcaption>
+            <figcaption>See to find out!</figcaption>
         </figure>
         <figure>
-            <h1>Robot Tale</h1>
+            <img src="resources/robotNature.jpg">
+            <h2>Robot Tale</h2>
             <hr>
             
-            
-            <figcaption><p>Travel through the action-packed, scifi world of Robot Tale</p></figcaption><img src="resources/robotNature.jpg">
+            <figcaption>Travel through the action-packed, scifi world of Robot Tale</figcaption>
         </figure>
         <figure>
-            
+            <h2>Project Prism</h2>
+            <hr>
+            <figcaption>Learn about Cube4's future project.</figcaption>
         </figure>
         
     </div>

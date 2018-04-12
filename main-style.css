@@ -1,76 +1,127 @@
 body
 {
-    background: linear-gradient(hsl(0, 0%, 10%), hsl(0, 0%, 6%)) no-repeat fixed;
-    color: ghostwhite;
-    height: auto;
+    background: hsl(0, 0%, 10%);
+    color: snow;
     margin: 0;
-    transform: tranlate3d(0,0,0);
-}
 
-h2, small, p, figcaption
-{
     font-family: sans-serif;
 }
+
+/* Text */
+
 h1 
-{ 
+{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 hr
 {
     opacity: 0.5;
 }
 
-.title
+.x-large-font
 {
-    text-align: center;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 600px), screen and (max-height: 600px)
+{
+    .x-large-font.dynamic
+    {
+        font-size: large;
+    }
+}
+
+.no-select
+{
+    pointer-events: none;
+    user-select: none;
 }
 
 .screen-wrap
-{ height: 100vh; }
+{ 
+    height: 100vh; 
+}
+
+/* animations */
+
+.fade-in
+{
+    animation: fadeIn linear 0.2s;
+}
+
+@keyframes fadeIn
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 
+/* bottom page stuff */
+
+footer
+{
+    color: lightgrey;
+    background-color: hsl(0, 0%, 9%);
+    border-top: 2px solid #222222;
+    
+    text-align: center;
+}
+footer > small
+{ 
+    font-size: small; 
+}
+
+
+
+
+/* Navigation 
+============================================= 
+Try not to mess around with this... 
+============================================= 
+*/
 nav
 {
-    z-index: 100;
-    width: 100vw;
-    height: 2em;
-    position: fixed;
     top: 0;
-    text-align: center; margin-bottom: 6em;
+    width: 100%;
+
+    z-index: 100;
+    position: fixed;
+    
+    text-align: center; 
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 nav > a > div
 {
-    font-weight: 550;
-    font-size: 1.2em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: inline-block;
-    
-    color: white;
     padding: 0.5em;
     margin: 0.25em;
-    margin-bottom: 0.5em;
     width: 15%;
 
+    color: white;
     background: rgba(25, 25, 25, 0.4);
     outline: solid white 1px;
+
     cursor: pointer;
 }
 
-nav > div
+.open-nav
 {
-    font-size: 4em;
-    width: 1.5em;
+    font-size: 3.2em;
+    width: 1.6em;
 }
 
-nav > div:active, nav > a > div:active
+.open-nav:active, nav > a > div:active
 {
     opacity: 0.8;
 }
 
-
+/* Not mobile */
 @media screen and (min-width: 601px), screen and (min-height: 601px)
 {
-    nav > div
+    .open-nav
     {
         display: none;
     }
@@ -79,9 +130,11 @@ nav > div:active, nav > a > div:active
         display: inline-block;
     }
 }
+
+/* Mobile */
 @media screen and (max-width: 600px), screen and (max-height: 600px)
 {
-    nav > div
+    .open-nav
     {
         display: block;
     }
@@ -111,25 +164,4 @@ nav > div:active, nav > a > div:active
             margin-right:30%;
         }
     }
-}
-
-.fade-in
-{
-    animation: fadeIn linear 0.2s;
-}
-
-@keyframes fadeIn
-{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-footer
-{
-    background-color: hsl(0, 0%, 10%);
-    border-top: 2px solid #222222;
-    font-size: 1rem;
-    padding: 0.5rem 0 0.5rem 0;
-    width: 100%;
-    color: lightgrey;
 }

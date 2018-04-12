@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cube4</title>
+
+    <meta name="author" content="Andrew Choi">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="./main-style.css">
+    <link rel="stylesheet" type="text/css" href="info-style.css">
+    <style>
+        /* Navigation bar*/
+        a:nth-child(3) > div { border-bottom: solid white; }
+    </style>
+</head>
+
+<body>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+    <div id="particles-js" class="no-select"></div>
+
+    <nav>
+        <div id="open-nav-js" class="open-nav">≡</div>
+        <a href="index.html"><div>Home</div></a>
+        <a href="about.html"><div>About</div></a>
+        <a href="media/index.html"><div>Media</div></a>
+        <a href="contact.html"><div>Contact</div></a>
+    </nav>
+    
+    <div class="container x-large-font dynamic">
+        <h1>About</h1>
+        <hr>
+        <div class="wrapper">
+            <p>
+                Cube<sub>4</sub> is an entertainment company started by Andrew Choi.
+                We are game developers, film makers, and other medium artists who want to intrigue our audience.
+                We're always innovating the story and depth of our projects,
+                challenging the status quo.
+                <br><br>
+                We are Cube<sub>4</sub>, the next level of entertainment.
+            </p>
+        </div>
+    </div>
+
+    <div class="container x-large-font dynamic">
+        <h1>Artists</h1>
+        <hr>
+        
+        <div class="wrapper profile">
+            <img src="./resources/andrew.png">
+            <h2>
+                Andrew Choi
+            </h2>
+            <hr>
+            <p>
+                As the founder of Cube<sub>4</sub>,
+                Andrew has put vast amounts of time into his work;
+                some might even call him insane.
+                He's always seeking to improve the quality and detail of the work,
+                often obssessing things from the obvious to the obscure.
+                <br><br>He's a total perfectionist.
+            </p>
+        </div>
+        
+        <div class="wrapper profile">
+            <h2>
+                Staff
+            </h2>
+            <hr>
+            <p>
+                Although not always seen,
+                these people are the various, 
+                dedicated workers who polish and detail the final product.
+                Whether they're a writer, animator, or programmer,
+                the staff of Cube<sub>4</sub> truly make the art an existing joy.
+            </p>
+        </div>
+    </div>
+
+    <footer class="title">
+        <small>© 2018 CUBE<sub>4</sub>.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="info-particle.js"></script>
+    <script src ="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js"></script>
+    <script src="./nav.js"></script>
+    
+</body>
